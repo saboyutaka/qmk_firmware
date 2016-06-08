@@ -22,11 +22,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   |  ~`  |  '"  | LGui | Left | Right|                                       |  Up  | Down |  {[  |  }]  | RGui   |
  *   `----------------------------------'                                       `------------------------------------'
  *                                        ,-------------.       ,--------------.
- *                                        | Clip |RClick|       | Pgup | SpLt  |
+ *                                        | Clip |GuiSft|       | Pgup | SpLt  |
  *                                 ,------|------|------|       |------+-------+------.
- *                                 |      |      |GuiSft|       | Pgdw |       |      |
- *                                 | Space|Backsp|------|       |------|  Del  |Enter |
- *                                 |      |ace   | Caps |       | Prt  |       |      |
+ *                                 |      |      |RClick|       | Pgdw |       |      |
+ *                                 |Backsp| Enter|------|       |------|  Del  | Space|
+ *                                 |ace   |      | Caps |       | Prt  |       |      |
  *                                 `--------------------'       `---------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -38,9 +38,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL,        KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   KC_ESC,
         KC_GRV,         KC_QUOT,      KC_LGUI,KC_LEFT,KC_RGHT,
-                                                    LALT(KC_DOWN),  KC_BTN2,
-                                                              LGUI(KC_LSHIFT),
-                                               KC_SPC,KC_BSPC,KC_CAPS,
+                                                    LALT(KC_DOWN),  LGUI(KC_LSHIFT),
+                                                              KC_BTN2,
+                                               KC_BSPC,KC_ENT,KC_CAPS,
         // right hand
              KC_VOLU,     KC_6,   KC_7,   KC_8,   KC_9,   KC_0,       KC_FN1,
              KC_MINS,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,       RGUI(KC_SPC),
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                   KC_UP,  KC_DOWN,KC_LBRC,KC_RBRC,    KC_RGUI,
              KC_PGUP,     RALT(KC_SPC),
              KC_PGDOWN,
-             KC_PSCR,KC_DELT,KC_ENT
+             KC_PSCR,KC_DELT,KC_SPC
     ),
 /* Keymap 1: Symbol Layer
  *
