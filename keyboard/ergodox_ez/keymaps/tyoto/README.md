@@ -18,8 +18,8 @@
  *                                        | Clip |GuiSft|       | Pgup | SpLt  |
  *                                 ,------|------|------|       |------+-------+------.
  *                                 |      |      |RClick|       | Pgdw |       |      |
- *                                 |Backsp| Enter|------|       |------|  Del  |Space |
- *                                 |ace   |      | Caps |       | Prt  |       |      |
+ *                                 | Enter|Backsp|------|       |------|  Del  |Space |
+ *                                 |      |ace   | Caps |       | Prt  |       |      |
  *                                 `--------------------'       `---------------------'
  */
 ```
