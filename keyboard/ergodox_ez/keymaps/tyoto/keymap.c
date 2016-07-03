@@ -24,9 +24,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,--------------.
  *                                        | Clip |GuiSft|       | Pgup | SpLt  |
  *                                 ,------|------|------|       |------+-------+------.
- *                                 |      |      |RClick|       | Pgdw |       |      |
- *                                 | Enter|Backsp|------|       |------|  Del  | Space|
- *                                 |      |ace   | Caps |       | Prt  |       |      |
+ *                                 |      |      | Caps |       | Pgdw |       |      |
+ *                                 | Space|Backsp|------|       |------|  Del  | Enter|
+ *                                 |      |ace   | Enter|       | Prt  |       |      |
  *                                 `--------------------'       `---------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -39,8 +39,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   KC_ESC,
         KC_GRV,         KC_QUOT,      KC_LGUI,KC_LEFT,KC_RGHT,
                                                     LALT(KC_DOWN),  LGUI(KC_LSHIFT),
-                                                              KC_BTN2,
-                                               KC_ENT,KC_BSPC,KC_CAPS,
+                                                              KC_CAPS,
+                                               KC_SPC,KC_BSPC,KC_ENT,
         // right hand
              KC_VOLU,     KC_6,   KC_7,   KC_8,   KC_9,   KC_0,       KC_FN1,
              KC_MINS,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,       RGUI(KC_SPC),
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                   KC_UP,  KC_DOWN,KC_LBRC,KC_RBRC,    KC_RGUI,
              KC_PGUP,     RALT(KC_SPC),
              KC_PGDOWN,
-             KC_PSCR,KC_DELT,KC_SPC
+             KC_PSCR,KC_DELT,KC_ENT
     ),
 /* Keymap 1: Symbol Layer
  *
